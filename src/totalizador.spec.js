@@ -6,4 +6,10 @@ describe("Totalizador - cantidad", () => {
     totalizador.ingresarCantidad(20);
     expect(totalizador.obtenerCantidad()).toEqual(20);
   });
+
+  it("deberia guardar el precio por item ingresado", () => {
+  const totalizador = new Totalizador();
+  totalizador.ingresarPrecioPorItem(3);
+  expect(totalizador.obtenerPrecioPorItem()).toEqual(3);
+});
 });
