@@ -1,28 +1,22 @@
 import Totalizador from "./totalizador.js";
 
-const totalizador = new Totalizador();
+const form = document.querySelector("#totalizador-form");
+const cantidadInput = document.querySelector("#cantidad");
+const precioInput = document.querySelector("#precio");
+const resultadoDiv = document.querySelector("#resultado-div");
 
-const inputCantidad = document.querySelector("#cantidad");
-const inputPrecio = document.querySelector("#precio");
-const previewDiv = document.querySelector("#preview-div");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-function renderPreview() {
-  previewDiv.innerText =
-    `Cantidad de ítem: ${totalizador.obtenerCantidad()}\n` +
-    `Precio por ítem: ${totalizador.obtenerPrecioPorItem()}`;
-}
+  const cantidad = Number.parseInt(cantidadInput.value);
+  const precio = Number.parseFloat(precioInput.value);
 
-inputCantidad.addEventListener("input", () => {
-  const cantidad = Number.parseInt(inputCantidad.value || "0", 10);
+  const totalizador = new Totalizador();
+
   totalizador.ingresarCantidad(cantidad);
-  renderPreview();
-});
-
-inputPrecio.addEventListener("input", () => {
-  const precio = Number.parseFloat(inputPrecio.value || "0");
   totalizador.ingresarPrecioPorItem(precio);
-  renderPreview();
-});
 
-// render inicial
-renderPreview();
+  const precioNeto = totalizador.calcularPrecioNeto();
+
+  resultadoDiv.innerHTML = `<p>Precio neto (${cantidad} * ${precio}): ${precioNeto}</p>`;
+});

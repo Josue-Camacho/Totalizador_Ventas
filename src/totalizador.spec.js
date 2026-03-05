@@ -1,15 +1,11 @@
 import Totalizador from "./totalizador.js";
 
-describe("Totalizador - cantidad", () => {
-  it("deberia guardar la cantidad ingresada", () => {
+describe("Totalizador - precio neto", () => {
+  it("deberia calcular el precio neto multiplicando cantidad por precio", () => {
     const totalizador = new Totalizador();
     totalizador.ingresarCantidad(20);
-    expect(totalizador.obtenerCantidad()).toEqual(20);
-  });
+    totalizador.ingresarPrecioPorItem(3);
 
-  it("deberia guardar el precio por item ingresado", () => {
-  const totalizador = new Totalizador();
-  totalizador.ingresarPrecioPorItem(3);
-  expect(totalizador.obtenerPrecioPorItem()).toEqual(3);
-});
+    expect(totalizador.calcularPrecioNeto()).toEqual(60);
+  });
 });

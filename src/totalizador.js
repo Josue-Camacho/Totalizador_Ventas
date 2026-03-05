@@ -1,4 +1,5 @@
 class Totalizador {
+
   constructor() {
     this.cantidad = 0;
     this.precioPorItem = 0;
@@ -18,6 +19,10 @@ class Totalizador {
 
   obtenerPrecioPorItem() {
     return this.precioPorItem;
+  }
+
+  calcularPrecioNeto() {
+    return this.cantidad * this.precioPorItem;
   }
 }
 

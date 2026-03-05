@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "849e5666bf2a919c559687a50d5b40856e2031cf",
     "author": "Josue-Camacho",
     "commit": {
       "date": "2026-03-05T14:01:10.000Z",
       "message": "feat:implementando mostrar el precio por item",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/849e5666bf2a919c559687a50d5b40856e2031cf"
     },
     "stats": {
       "total": 71,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Josue-Camacho",
+    "commit": {
+      "date": "2026-03-05T14:10:05.000Z",
+      "message": "feat:Implementando mostrar el precio neto",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 29,
+      "deletions": 31,
+      "date": "2026-03-05"
+    },
+    "coverage": 71.43,
+    "test_count": 1,
     "failed_tests": 0,
     "conclusion": "success"
   }
