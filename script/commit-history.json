@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Josue-Camacho",
+    "commit": {
+      "date": "2026-03-05T13:43:49.000Z",
+      "message": "feat:implementando primera funcionalidad",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 82,
+      "additions": 38,
+      "deletions": 44,
+      "date": "2026-03-05"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]

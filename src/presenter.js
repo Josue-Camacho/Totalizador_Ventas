@@ -1,15 +1,12 @@
-import sumar from "./sumador";
+import Totalizador from "./totalizador.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+const totalizador = new Totalizador();
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+const inputCantidad = document.querySelector("#cantidad");
+const divCantidad = document.querySelector("#cantidad-mostrada");
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+inputCantidad.addEventListener("input", () => {
+  const cantidad = Number.parseInt(inputCantidad.value || "0", 10);
+  totalizador.ingresarCantidad(cantidad);
+  divCantidad.innerText = `Cantidad de ítem: ${totalizador.obtenerCantidad()}`;
 });
