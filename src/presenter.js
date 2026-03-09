@@ -7,6 +7,7 @@ const estadoInput = document.querySelector("#estado");
 const resultadoDiv = document.querySelector("#resultado-div");
 const descuentoDiv = document.querySelector("#descuento-div");
 const impuestoDiv = document.querySelector("#impuesto-div");
+const totalDiv = document.querySelector("#total-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -19,13 +20,14 @@ form.addEventListener("submit", (event) => {
 
   totalizador.ingresarCantidad(cantidad);
   totalizador.ingresarPrecioPorItem(precio);
-  totalizador.ingresarEstadoPorItem(estado);
-
-  const precioNeto = totalizador.calcularPrecioNeto();
+  totalizador.ingresarEstado(estado);
+  const total = totalizador.obtenerTotal();
+  const precioNeto = totalizador.obtenerPrecioNeto();
   const descuentoPorCantidad = totalizador.obtenerDescuentoPorCantidad();
   const impuesto = totalizador.obtenerImpuestoPorEstado();
 
   resultadoDiv.innerHTML = `<p>Precio neto (${cantidad} * ${precio}): ${precioNeto}</p>`;
   impuestoDiv.innerHTML = `<p>Impuesto para ${estado} (${impuesto}%): ${impuesto*precioNeto/100}</p>`;
   descuentoDiv.innerHTML = `<p>Descuento (${descuentoPorCantidad}%): ${descuentoPorCantidad*precioNeto/100}</p>`;
+  totalDiv.innerHTML = `<p>Precio Total(+impuesto): ${total}</p>`;
 });

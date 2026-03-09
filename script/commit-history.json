@@ -76,12 +76,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "eeb2c0c1cf59e7d9a7231fd5492d68c8e58cd895",
     "author": "Juanma",
     "commit": {
       "date": "2026-03-09T18:06:09.000Z",
       "message": "feat: funcionalidad impuesto por eestado",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/eeb2c0c1cf59e7d9a7231fd5492d68c8e58cd895"
     },
     "stats": {
       "total": 39,
@@ -93,5 +93,24 @@
     "test_count": 0,
     "failed_tests": 0,
     "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juanma",
+    "commit": {
+      "date": "2026-03-09T22:21:55.000Z",
+      "message": "feat: calcular precio total con impuesto CA",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 37,
+      "deletions": 11,
+      "date": "2026-03-09"
+    },
+    "coverage": 55,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

@@ -96,9 +96,23 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "eeb2c0c1cf59e7d9a7231fd5492d68c8e58cd895",
     "commitName": "feat: funcionalidad impuesto por eestado",
     "commitTimestamp": 1773079572358,
     "testId": 4
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1773081318386,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular precio total con impuesto CA",
+    "commitTimestamp": 1773094919264,
+    "testId": 5
   }
 ]

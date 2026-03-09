@@ -2,11 +2,12 @@ class Totalizador {
 
   constructor() {
     this.cantidad = 0;
-    this.precioPorItem = 0;
-    this.precioNeto= 0;
-    this.descuentoPorCantidad = 0;
+    this.precioPorItem = 0.0;
+    this.precioNeto= 0.0;
+    this.descuentoPorCantidad = 0.0;
     this.estado="";
     this.ImpuestoPorEstado = 0;
+    this.total=0.0;
   }
 
   ingresarCantidad(cantidad) {
@@ -21,7 +22,7 @@ class Totalizador {
     this.precioPorItem = precio;
   }
 
-  ingresarEstadoPorItem(estado) {
+  ingresarEstado(estado) {
     this.estado = estado;
   }
 
@@ -31,6 +32,9 @@ class Totalizador {
 
   calcularPrecioNeto() {
     this.precioNeto = this.cantidad * this.precioPorItem;
+  }
+
+  obtenerPrecioNeto(){
     return this.precioNeto;
   }
 
@@ -53,7 +57,7 @@ class Totalizador {
     return this.descuentoPorCantidad;
   }
 
-  obtenerImpuestoPorEstado(){
+  calcularImpuestoPorEstado(){
     if(this.estado === "UT"){
       this.ImpuestoPorEstado = 6.65;
     }
@@ -69,7 +73,17 @@ class Totalizador {
     else if(this.estado === "CA"){
       this.ImpuestoPorEstado = 8.25;
     }
+  }
+
+  obtenerImpuestoPorEstado(){
     return this.ImpuestoPorEstado;
+  }
+
+  obtenerTotal(){
+    this.calcularPrecioNeto();
+    this.calcularImpuestoPorEstado();
+    this.total = (this.precioNeto + (this.ImpuestoPorEstado * this.precioNeto / 100)).toFixed(2);
+    return this.total;
   }
 }
 
