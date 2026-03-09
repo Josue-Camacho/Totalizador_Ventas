@@ -110,9 +110,15 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d07fb676de743cabbf77f22fd019813ce8d0d134",
     "commitName": "feat: calcular precio total con impuesto CA",
     "commitTimestamp": 1773094919264,
     "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular precio total con impuesto AL",
+    "commitTimestamp": 1773095200901,
+    "testId": 6
   }
 ]

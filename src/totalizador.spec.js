@@ -16,4 +16,11 @@ describe("Totalizador - precio neto", () => {
     totalizador.ingresarEstado("CA");
     expect(totalizador.obtenerTotal()).toEqual("108.25");
   });
+  it("deberia calcular el precio total con el impuesto AL", () => {
+    const totalizador = new Totalizador();
+    totalizador.ingresarCantidad(10);
+    totalizador.ingresarPrecioPorItem(10);
+    totalizador.ingresarEstado("AL");
+    expect(totalizador.obtenerTotal()).toEqual("104.00");
+  });
 });
