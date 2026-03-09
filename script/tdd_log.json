@@ -84,9 +84,15 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "373389d809578552f3894cb627c018e2bc9535cb",
     "commitName": "feat:Implementando mostrar el precio neto",
     "commitTimestamp": 1772719807339,
     "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: funcionalidad descuento por precioNeto",
+    "commitTimestamp": 1773063837706,
+    "testId": 3
   }
 ]

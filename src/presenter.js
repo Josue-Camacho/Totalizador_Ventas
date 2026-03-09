@@ -4,6 +4,7 @@ const form = document.querySelector("#totalizador-form");
 const cantidadInput = document.querySelector("#cantidad");
 const precioInput = document.querySelector("#precio");
 const resultadoDiv = document.querySelector("#resultado-div");
+const descuentoDiv = document.querySelector("#descuento-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -17,6 +18,8 @@ form.addEventListener("submit", (event) => {
   totalizador.ingresarPrecioPorItem(precio);
 
   const precioNeto = totalizador.calcularPrecioNeto();
+  const descuentoPorCantidad = totalizador.obtenerDescuentoPorCantidad();
 
   resultadoDiv.innerHTML = `<p>Precio neto (${cantidad} * ${precio}): ${precioNeto}</p>`;
+  descuentoDiv.innerHTML = `<p>Descuento (${descuentoPorCantidad}%): ${descuentoPorCantidad}</p>`;
 });
