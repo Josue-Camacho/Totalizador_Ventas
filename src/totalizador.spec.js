@@ -30,4 +30,11 @@ describe("Totalizador - precio neto", () => {
     totalizador.ingresarEstado("NV");
     expect(totalizador.obtenerTotal()).toEqual("108.00");
   });
+  it("deberia calcular el precio total con el impuesto UT", () => {
+    const totalizador = new Totalizador();
+    totalizador.ingresarCantidad(10);
+    totalizador.ingresarPrecioPorItem(10);
+    totalizador.ingresarEstado("UT");
+    expect(totalizador.obtenerTotal()).toEqual("106.65");
+  });
 });

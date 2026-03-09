@@ -122,9 +122,15 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1cc531aecd4b2f727edd123d529c8b968d7c6b63",
     "commitName": "feat: calcular precio total con impuesto NV",
     "commitTimestamp": 1773095280236,
     "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular precio total con impuesto UT",
+    "commitTimestamp": 1773095358377,
+    "testId": 8
   }
 ]

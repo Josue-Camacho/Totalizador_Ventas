@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1cc531aecd4b2f727edd123d529c8b968d7c6b63",
     "author": "Juanma",
     "commit": {
       "date": "2026-03-09T22:27:59.000Z",
       "message": "feat: calcular precio total con impuesto NV",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/1cc531aecd4b2f727edd123d529c8b968d7c6b63"
     },
     "stats": {
       "total": 7,
@@ -148,6 +148,25 @@
     },
     "coverage": 60,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juanma",
+    "commit": {
+      "date": "2026-03-09T22:29:16.000Z",
+      "message": "feat: calcular precio total con impuesto UT",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-03-09"
+    },
+    "coverage": 62.5,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }
