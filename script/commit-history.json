@@ -57,16 +57,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a614bd6f7d5f22731dc3282f3486b5349a180fc8",
     "author": "Juanma",
     "commit": {
       "date": "2026-03-09T13:43:50.000Z",
       "message": "feat: funcionalidad descuento por precioNeto",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/a614bd6f7d5f22731dc3282f3486b5349a180fc8"
     },
     "stats": {
       "total": 28,
       "additions": 27,
+      "deletions": 1,
+      "date": "2026-03-09"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juanma",
+    "commit": {
+      "date": "2026-03-09T18:06:09.000Z",
+      "message": "feat: funcionalidad impuesto por eestado",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 38,
       "deletions": 1,
       "date": "2026-03-09"
     },

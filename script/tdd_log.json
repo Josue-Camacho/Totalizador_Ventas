@@ -90,9 +90,15 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a614bd6f7d5f22731dc3282f3486b5349a180fc8",
     "commitName": "feat: funcionalidad descuento por precioNeto",
     "commitTimestamp": 1773063837706,
     "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: funcionalidad impuesto por eestado",
+    "commitTimestamp": 1773079572358,
+    "testId": 4
   }
 ]
