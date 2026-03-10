@@ -182,9 +182,15 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b5c6801d2bb368dbf1fe26c699ea76e2b8b09f00",
     "commitName": "feat: costo de envio",
     "commitTimestamp": 1773114282448,
     "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:implementando funcionalidad tipoCliente",
+    "commitTimestamp": 1773116735177,
+    "testId": 18
   }
 ]

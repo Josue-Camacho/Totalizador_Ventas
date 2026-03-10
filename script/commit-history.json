@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b5c6801d2bb368dbf1fe26c699ea76e2b8b09f00",
     "author": "Juanma",
     "commit": {
       "date": "2026-03-10T03:44:41.000Z",
       "message": "feat: costo de envio",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/b5c6801d2bb368dbf1fe26c699ea76e2b8b09f00"
     },
     "stats": {
       "total": 49,
@@ -338,6 +338,25 @@
     },
     "coverage": 71.26,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Josue-Camacho",
+    "commit": {
+      "date": "2026-03-10T04:25:33.000Z",
+      "message": "feat:implementando funcionalidad tipoCliente",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 297,
+      "additions": 186,
+      "deletions": 111,
+      "date": "2026-03-10"
+    },
+    "coverage": 71.57,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -88,4 +88,16 @@ describe("Totalizador - precio neto", () => {
     totalizador.ingresarPesoVolumetricoPorUnidad(21);
     expect(totalizador.obtenerTotal()).toEqual("14562.50");
   });
+
+  it("deberia aplicar descuento al costo de envio para cliente recurrente", () => {
+  const totalizador = new Totalizador();
+  totalizador.ingresarCantidad(1000);
+  totalizador.ingresarPrecioPorItem(10);
+  totalizador.ingresarEstado("TX");
+  totalizador.ingresarPesoVolumetricoPorUnidad(21);
+  totalizador.ingresarTipoCliente("Recurrente");
+
+  expect(totalizador.obtenerTotal()).toEqual("14537.50");
+  });
+
 });
