@@ -80,4 +80,12 @@ describe("Totalizador - precio neto", () => {
     totalizador.ingresarEstado("TX");
     expect(totalizador.obtenerTotal()).toEqual("9562.50");
   });
+  it("deberia calcular el precio mas el costo de envio", () => {
+    const totalizador = new Totalizador();
+    totalizador.ingresarCantidad(1000);
+    totalizador.ingresarPrecioPorItem(10);
+    totalizador.ingresarEstado("TX");
+    totalizador.ingresarPesoVolumetricoPorUnidad(21);
+    expect(totalizador.obtenerTotal()).toEqual("14562.50");
+  });
 });

@@ -304,12 +304,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dd96673197bcf72bc23f7676cfc0c7e01e284d61",
     "author": "Juanma",
     "commit": {
       "date": "2026-03-10T03:30:24.000Z",
       "message": "feat: menu desplegable para categoria",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/dd96673197bcf72bc23f7676cfc0c7e01e284d61"
     },
     "stats": {
       "total": 83,
@@ -319,6 +319,25 @@
     },
     "coverage": 74.65,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juanma",
+    "commit": {
+      "date": "2026-03-10T03:44:41.000Z",
+      "message": "feat: costo de envio",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 49,
+      "additions": 47,
+      "deletions": 2,
+      "date": "2026-03-10"
+    },
+    "coverage": 71.26,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

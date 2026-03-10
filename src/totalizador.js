@@ -11,6 +11,7 @@ class Totalizador {
     this.ImpuestoTotal=0.0;
     this.descuentoTotal=0.0;
     this.categoria="Varios";
+    this.envio=0.0;
   }
 
   ingresarCategoria(categoria)  {
@@ -132,6 +133,34 @@ class Totalizador {
     this.descuentoTotal = this.descuentoPorCantidad+this.calcularDescuentoExtra();
   }
 
+  ingresarPesoVolumetricoPorUnidad(peso){
+    if(peso>200){
+      this.envio=9.00*this.cantidad;
+    }
+    else if(peso>100){
+      this.envio=8.00*this.cantidad;
+    }
+    else if(peso>80){
+      this.envio=6.50*this.cantidad;
+    }
+    else if(peso>40){
+      this.envio=6.00*this.cantidad;
+    }
+    else if(peso>20){
+      this.envio=5.00*this.cantidad;
+    }
+    else if(peso>10){
+      this.envio=3.50*this.cantidad;
+    }
+    else{
+      this.envio=0.00;
+    }
+  }
+
+  calcularEnvio(){
+
+  }
+
   obtenerTotal(){
     this.calcularPrecioNeto();
     this.calcularImpuestoTotal();
@@ -139,6 +168,8 @@ class Totalizador {
     if(this.ImpuestoTotal!=0){ this.total = (this.precioNeto + (this.ImpuestoTotal * this.precioNeto / 100));}
     this.calcularDescuentoTotal();
     if(this.descuentoTotal!=0){this.total=(this.total*(1-(this.descuentoTotal/100)));}
+    this.calcularEnvio();
+    this.total+=this.envio;
     return this.total.toFixed(2)  ;
   }
 }

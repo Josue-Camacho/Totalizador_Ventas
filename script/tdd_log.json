@@ -176,9 +176,15 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "dd96673197bcf72bc23f7676cfc0c7e01e284d61",
     "commitName": "feat: menu desplegable para categoria",
     "commitTimestamp": 1773113425533,
     "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: costo de envio",
+    "commitTimestamp": 1773114282448,
+    "testId": 17
   }
 ]

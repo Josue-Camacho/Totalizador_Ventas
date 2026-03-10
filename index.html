@@ -29,8 +29,8 @@
 
       <br /><br />
 
-      <label for="estado">Tipo de producto:</label>
-      <select name="estado" id="estado">
+      <label for="categoria">Categoria de producto:</label>
+      <select name="categoria" id="categoria">
         <option value="Alimentos">Alimentos</option>
         <option value="BebidasAlcoholicas">Bebidas Alcoholicas</option>
         <option value="MaterialDeEscritorio">Material de Escritorio</option>
@@ -39,6 +39,11 @@
         <option value="Vestimenta">Vestimenta</option>
         <option value="Varios">Varios</option>
       </select>
+
+      <br /><br />
+
+      <label for="peso">Peso volumétrico por unidad (g):</label>
+      <input type="number" id="peso" />
 
       <br /><br />
 
@@ -51,6 +56,7 @@
     <div id="resultado-div"></div>
     <div id="impuesto-div"></div>
     <div id="descuento-div"></div>
+    <div id="envio-div"></div>
     <div id="total-div"></div>
 
     <script type="module" src="./src/presenter.js"></script>
