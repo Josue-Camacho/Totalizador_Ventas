@@ -5,7 +5,7 @@ class Totalizador {
     this.precioPorItem = 0.0;
     this.precioNeto= 0.0;
     this.descuentoPorCantidad = 0.0;
-    this.estado="";
+    this.estado="CA";
     this.ImpuestoPorEstado = 0;
     this.total=0.0;
   }

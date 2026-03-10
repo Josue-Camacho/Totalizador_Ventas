@@ -164,9 +164,15 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8ad2dbca4facebfda7e4f9a3b8326a36b6bb79f6",
     "commitName": "feat: calcular precio total con descuento e impuesto",
     "commitTimestamp": 1773108353062,
     "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: menu desplegable para estado",
+    "commitTimestamp": 1773108756833,
+    "testId": 15
   }
 ]

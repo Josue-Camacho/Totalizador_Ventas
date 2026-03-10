@@ -266,17 +266,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8ad2dbca4facebfda7e4f9a3b8326a36b6bb79f6",
     "author": "Juanma",
     "commit": {
       "date": "2026-03-10T02:05:48.000Z",
       "message": "feat: calcular precio total con descuento e impuesto",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/8ad2dbca4facebfda7e4f9a3b8326a36b6bb79f6"
     },
     "stats": {
       "total": 9,
       "additions": 8,
       "deletions": 1,
+      "date": "2026-03-10"
+    },
+    "coverage": 91.11,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juanma",
+    "commit": {
+      "date": "2026-03-10T02:12:35.000Z",
+      "message": "feat: menu desplegable para estado",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 7,
+      "deletions": 2,
       "date": "2026-03-10"
     },
     "coverage": 91.11,
