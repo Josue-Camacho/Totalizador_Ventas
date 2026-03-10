@@ -72,4 +72,11 @@ describe("Totalizador - precio neto", () => {
     totalizador.ingresarEstado("");
     expect(totalizador.obtenerTotal()).toEqual("25500.00");
   });
+  it("deberia calcular el precio total con el descuento y el impuesto", () => {
+    const totalizador = new Totalizador();
+    totalizador.ingresarCantidad(1000);
+    totalizador.ingresarPrecioPorItem(10);
+    totalizador.ingresarEstado("TX");
+    expect(totalizador.obtenerTotal()).toEqual("9562.50");
+  });
 });

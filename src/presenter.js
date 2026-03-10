@@ -29,5 +29,5 @@ form.addEventListener("submit", (event) => {
   resultadoDiv.innerHTML = `<p>Precio neto (${cantidad} * ${precio}): ${precioNeto}</p>`;
   impuestoDiv.innerHTML = `<p>Impuesto para ${estado} (${impuesto}%): ${impuesto*precioNeto/100}</p>`;
   descuentoDiv.innerHTML = `<p>Descuento (${descuentoPorCantidad}%): ${descuentoPorCantidad*precioNeto/100}</p>`;
-  totalDiv.innerHTML = `<p>Precio Total(+impuesto): ${total}</p>`;
+  totalDiv.innerHTML = `<p>Precio Total(descuento e impuesto): ${total}</p>`;
 });
