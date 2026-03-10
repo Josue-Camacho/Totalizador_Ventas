@@ -188,9 +188,15 @@
     "testId": 17
   },
   {
-    "commitId": "HEAD",
+    "commitId": "66e8b0a07d574058d149f66d838acbde9b2895bf",
     "commitName": "feat:implementando funcionalidad tipoCliente",
     "commitTimestamp": 1773116735177,
     "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "agregar descuento fijo por tipo cliente y categoria",
+    "commitTimestamp": 1773117329608,
+    "testId": 19
   }
 ]

@@ -180,7 +180,8 @@ class Totalizador {
     if (this.descuentoTotal !== 0) {
       this.total = this.total * (1 - this.descuentoTotal / 100);
     }
-
+    const descuentoFijo = this.calcularDescuentoFijo();
+    this.total -= descuentoFijo;
     this.calcularEnvio();
 
     const descuentoEnvio = this.calcularDescuentoEnvio();
@@ -204,6 +205,26 @@ class Totalizador {
   return 0;
   }
 
+
+  calcularDescuentoFijo(){
+  if(
+    this.tipoCliente === "Recurrente" &&
+    this.precioNeto > 3000 &&
+    this.categoria === "Alimentos"
+  ){
+    return 100;
+  }
+
+  if(
+    this.tipoCliente === "Especial" &&
+    this.precioNeto > 7000 &&
+    this.categoria === "Electronicos"
+  ){
+    return 200;
+  }
+
+  return 0;
+  }
 
 }
 

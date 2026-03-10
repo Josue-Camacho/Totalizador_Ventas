@@ -96,8 +96,19 @@ describe("Totalizador - precio neto", () => {
   totalizador.ingresarEstado("TX");
   totalizador.ingresarPesoVolumetricoPorUnidad(21);
   totalizador.ingresarTipoCliente("Recurrente");
-
   expect(totalizador.obtenerTotal()).toEqual("14537.50");
+  });
+
+  it("deberia aplicar descuento fijo de 100 para cliente recurrente en alimentos con precio neto mayor a 3000", () => {
+  const totalizador = new Totalizador();
+
+  totalizador.ingresarCantidad(2000);
+  totalizador.ingresarPrecioPorItem(2); 
+  totalizador.ingresarEstado("NV");
+  totalizador.ingresarCategoria("Alimentos");
+  totalizador.ingresarTipoCliente("Recurrente");
+
+  expect(totalizador.obtenerTotal()).toEqual("3917.60");
   });
 
 });
