@@ -8,6 +8,13 @@ class Totalizador {
     this.estado="CA";
     this.ImpuestoPorEstado = 0;
     this.total=0.0;
+    this.ImpuestoTotal=0.0;
+    this.descuentoTotal=0.0;
+    this.categoria="Varios";
+  }
+
+  ingresarCategoria(categoria)  {
+    this.categoria = categoria;
   }
 
   ingresarCantidad(cantidad) {
@@ -82,14 +89,57 @@ class Totalizador {
     return this.ImpuestoPorEstado;
   }
 
+  calcularImpuestoExtra(){
+    if(this.categoria =="Alimentos"||this.categoria =="MaterialDeEscritorio"||this.categoria =="Varios"){
+      return 0.00;
+    }
+    else if(this.categoria =="BebidasAlcoholicas"){
+      return 7.00;
+    }
+    else if(this.categoria =="Muebles"){
+      return 3.00;
+    }
+    else if(this.categoria =="Electronicos"){
+      return 4.00;
+    }
+    else if(this.categoria =="Vestimenta"){
+      return 2.00;
+    }
+  }
+
+    calcularDescuentoExtra(){
+    if(this.categoria =="BebidasAlcoholicas"||this.categoria =="Muebles"||this.categoria =="Varios"||this.categoria=="Vestimenta"){
+      return 0.00;
+    }
+    else if(this.categoria =="Electronicos"){
+      return 1.00;
+    }
+    else if(this.categoria =="MaterialDeEscritorio"){
+      return 1.50;
+    }
+    else if(this.categoria =="Alimentos"){
+      return 2.00;
+    }
+  }
+
+  calcularImpuestoTotal(){
+    this.calcularImpuestoPorEstado();
+    this.ImpuestoTotal = this.ImpuestoPorEstado+this.calcularImpuestoExtra();
+  }
+
+  calcularDescuentoTotal(){
+    this.calcularDescuentoPorCantidad();
+    this.descuentoTotal = this.descuentoPorCantidad+this.calcularDescuentoExtra();
+  }
+
   obtenerTotal(){
     this.calcularPrecioNeto();
-    this.calcularImpuestoPorEstado();
+    this.calcularImpuestoTotal();
     this.total=this.precioNeto;
-    if(this.ImpuestoPorEstado!=0){ this.total = (this.precioNeto + (this.ImpuestoPorEstado * this.precioNeto / 100)).toFixed(2);}
-    this.calcularDescuentoPorCantidad();
-    if(this.descuentoPorCantidad!=0){this.total=(this.total*(1-(this.descuentoPorCantidad/100))).toFixed(2);}
-    return this.total;
+    if(this.ImpuestoTotal!=0){ this.total = (this.precioNeto + (this.ImpuestoTotal * this.precioNeto / 100));}
+    this.calcularDescuentoTotal();
+    if(this.descuentoTotal!=0){this.total=(this.total*(1-(this.descuentoTotal/100)));}
+    return this.total.toFixed(2)  ;
   }
 }
 

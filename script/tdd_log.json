@@ -170,9 +170,15 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4c772f003890056139ac669f8ff2f0fd0796c2b3",
     "commitName": "feat: menu desplegable para estado",
     "commitTimestamp": 1773108756833,
     "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: menu desplegable para categoria",
+    "commitTimestamp": 1773113425533,
+    "testId": 16
   }
 ]
