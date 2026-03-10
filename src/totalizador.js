@@ -38,22 +38,25 @@ class Totalizador {
     return this.precioNeto;
   }
 
-  obtenerDescuentoPorCantidad() {
-    if (this.precioNeto >= 10000) {
-      this.descuentoPorCantidad = 15;
+  calcularDescuentoPorCantidad() {
+    if (this.total >= 10000.00) {
+      this.descuentoPorCantidad = 15.00;
     }
-    else if (this.precioNeto >= 30000) {
-      this.descuentoPorCantidad = 10;
+    else if (this.total >= 30000.00) {
+      this.descuentoPorCantidad = 10.00;
     }
-    else if (this.precioNeto >= 7000) {
-      this.descuentoPorCantidad = 7;
+    else if (this.total >= 7000.00) {
+      this.descuentoPorCantidad = 7.00;
     } 
-    else if (this.precioNeto >= 3000) {
-      this.descuentoPorCantidad = 5;
+    else if (this.total >= 3000.00) {
+      this.descuentoPorCantidad = 5.00;
     }
-    else if (this.precioNeto >= 1000) {
-      this.descuentoPorCantidad = 3;
+    else if (this.total >= 1000.00) {
+      this.descuentoPorCantidad = 3.00;
     }
+  }
+
+  obtenerDescuentoPorCantidad(){
     return this.descuentoPorCantidad;
   }
 
@@ -82,7 +85,10 @@ class Totalizador {
   obtenerTotal(){
     this.calcularPrecioNeto();
     this.calcularImpuestoPorEstado();
-    this.total = (this.precioNeto + (this.ImpuestoPorEstado * this.precioNeto / 100)).toFixed(2);
+    this.total=this.precioNeto;
+    if(this.ImpuestoPorEstado!=0){ this.total = (this.precioNeto + (this.ImpuestoPorEstado * this.precioNeto / 100)).toFixed(2);}
+    this.calcularDescuentoPorCantidad();
+    if(this.descuentoPorCantidad!=0){this.total=(this.total*(1-(this.descuentoPorCantidad/100))).toFixed(2);}
     return this.total;
   }
 }

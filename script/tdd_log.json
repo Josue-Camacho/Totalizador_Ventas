@@ -128,9 +128,15 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "954271dcf4347b80f381d4dfd344b4f6223cc718",
     "commitName": "feat: calcular precio total con impuesto UT",
     "commitTimestamp": 1773095358377,
     "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular precio total con descuento de 1000",
+    "commitTimestamp": 1773104766632,
+    "testId": 9
   }
 ]

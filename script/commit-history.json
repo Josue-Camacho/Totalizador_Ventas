@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "954271dcf4347b80f381d4dfd344b4f6223cc718",
     "author": "Juanma",
     "commit": {
       "date": "2026-03-09T22:29:16.000Z",
       "message": "feat: calcular precio total con impuesto UT",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/954271dcf4347b80f381d4dfd344b4f6223cc718"
     },
     "stats": {
       "total": 7,
@@ -167,6 +167,25 @@
     },
     "coverage": 62.5,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juanma",
+    "commit": {
+      "date": "2026-03-10T01:06:05.000Z",
+      "message": "feat: calcular precio total con descuento de 1000",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 25,
+      "deletions": 12,
+      "date": "2026-03-10"
+    },
+    "coverage": 80,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }
