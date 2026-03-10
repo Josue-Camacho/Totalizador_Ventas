@@ -194,9 +194,15 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9485b40c986fa331bd0830d63db240aad0dea402",
     "commitName": "agregar descuento fijo por tipo cliente y categoria",
     "commitTimestamp": 1773117329608,
     "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:mostrar detalle completo del total",
+    "commitTimestamp": 1773117690221,
+    "testId": 20
   }
 ]

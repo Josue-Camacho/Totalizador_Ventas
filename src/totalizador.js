@@ -50,6 +50,9 @@ class Totalizador {
     return this.precioNeto;
   }
 
+  obtenerEnvio(){
+    return this.envio;
+  }
   calcularDescuentoPorCantidad() {
     if (this.total >= 30000) {
       this.descuentoPorCantidad = 15;

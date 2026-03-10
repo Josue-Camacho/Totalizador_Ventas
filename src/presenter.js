@@ -38,17 +38,23 @@ form.addEventListener("submit", (event) => {
   const precioNeto = totalizador.obtenerPrecioNeto();
   const descuento = totalizador.obtenerDescuentoTotal();
   const impuesto = totalizador.obtenerImpuestoTotal();
+  const envio = totalizador.obtenerEnvio();
 
   const impuestoCalculado = (impuesto * precioNeto) / 100;
   const descuentoCalculado = (descuento * precioNeto) / 100;
 
-  resultadoDiv.innerHTML = `<p>Precio neto (${cantidad} * ${precio}): ${precioNeto.toFixed(2)}</p>`;
+  resultadoDiv.innerHTML =
+    `<p>Precio neto (${cantidad} * ${precio}): ${precioNeto.toFixed(2)}</p>`;
 
-  impuestoDiv.innerHTML = `<p>Impuesto total (${impuesto}%): ${impuestoCalculado.toFixed(2)}</p>`;
+  impuestoDiv.innerHTML =
+    `<p>Impuesto aplicado (${impuesto}%): ${impuestoCalculado.toFixed(2)}</p>`;
 
-  descuentoDiv.innerHTML = `<p>Descuento total (${descuento}%): ${descuentoCalculado.toFixed(2)}</p>`;
+  descuentoDiv.innerHTML =
+    `<p>Descuento aplicado (${descuento}%): ${descuentoCalculado.toFixed(2)}</p>`;
 
-  envioDiv.innerHTML = `<p>Costo de envío aplicado según peso y tipo de cliente</p>`;
+  envioDiv.innerHTML =
+    `<p>Costo de envío: ${envio.toFixed(2)}</p>`;
 
-  totalDiv.innerHTML = `<p>Total a pagar: ${total}</p>`;
+  totalDiv.innerHTML =
+    `<p><strong>Total a pagar: ${total}</strong></p>`;
 });

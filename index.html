@@ -5,32 +5,34 @@
   </head>
 
   <body>
+
     <h1>Totalizador de Venta</h1>
 
     <form id="totalizador-form">
 
       <label for="cantidad">Cantidad de ítems:</label>
-      <input type="number" id="cantidad" />
+      <input type="number" id="cantidad" required />
 
       <br /><br />
 
       <label for="precio">Precio por ítem:</label>
-      <input type="number" id="precio" />
+      <input type="number" id="precio" step="0.01" required />
 
       <br /><br />
 
       <label for="estado">Estado:</label>
-      <select name="estado" id="estado">
+      <select id="estado">
         <option value="CA">California</option>
         <option value="NV">Nevada</option>
         <option value="TX">Texas</option>
-        <option value="FL">Florida</option>
+        <option value="AL">Alabama</option>
+        <option value="UT">Utah</option>
       </select>
 
       <br /><br />
 
       <label for="categoria">Categoria de producto:</label>
-      <select name="categoria" id="categoria">
+      <select id="categoria">
         <option value="Alimentos">Alimentos</option>
         <option value="BebidasAlcoholicas">Bebidas Alcoholicas</option>
         <option value="MaterialDeEscritorio">Material de Escritorio</option>
@@ -53,7 +55,7 @@
       <br /><br />
 
       <label for="peso">Peso volumétrico por unidad (g):</label>
-      <input type="number" id="peso" />
+      <input type="number" id="peso" required />
 
       <br /><br />
 
