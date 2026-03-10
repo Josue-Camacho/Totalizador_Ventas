@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "11d290ae08bfb90196cbaf3c50b7bc113951398f",
     "author": "Juanma",
     "commit": {
       "date": "2026-03-10T01:09:27.000Z",
       "message": "feat: calcular precio total con descuento de 7000",
-      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/11d290ae08bfb90196cbaf3c50b7bc113951398f"
     },
     "stats": {
       "total": 7,
@@ -224,6 +224,25 @@
     },
     "coverage": 84.44,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Juanma",
+    "commit": {
+      "date": "2026-03-10T01:12:16.000Z",
+      "message": "feat: calcular precio total con descuento de 10000",
+      "url": "https://github.com/Josue-Camacho/Totalizador_Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 9,
+      "deletions": 2,
+      "date": "2026-03-10"
+    },
+    "coverage": 86.67,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

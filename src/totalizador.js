@@ -39,10 +39,10 @@ class Totalizador {
   }
 
   calcularDescuentoPorCantidad() {
-    if (this.total >= 10000.00) {
+    if (this.total >= 30000.00) {
       this.descuentoPorCantidad = 15.00;
     }
-    else if (this.total >= 30000.00) {
+    else if (this.total >= 10000.00) {
       this.descuentoPorCantidad = 10.00;
     }
     else if (this.total >= 7000.00) {
