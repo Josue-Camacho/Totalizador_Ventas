@@ -152,9 +152,15 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "db0c4cda3760e8c9488c17aa94b5b48e9dc0a8fc",
     "commitName": "feat: calcular precio total con descuento de 10000",
     "commitTimestamp": 1773105137632,
     "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: calcular precio total con descuento de 30000",
+    "commitTimestamp": 1773105265099,
+    "testId": 13
   }
 ]

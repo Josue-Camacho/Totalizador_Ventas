@@ -65,4 +65,11 @@ describe("Totalizador - precio neto", () => {
     totalizador.ingresarEstado("");
     expect(totalizador.obtenerTotal()).toEqual("9000.00");
   });
+  it("deberia calcular el precio total con el descuento sobre 30000", () => {
+    const totalizador = new Totalizador();
+    totalizador.ingresarCantidad(300);
+    totalizador.ingresarPrecioPorItem(100);
+    totalizador.ingresarEstado("");
+    expect(totalizador.obtenerTotal()).toEqual("25500.00");
+  });
 });
